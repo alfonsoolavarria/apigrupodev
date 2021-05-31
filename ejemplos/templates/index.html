@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Form_registro</title>
+
+    <link rel="icon" href="img/logo.jpg">
+
+    <!-- MDB -->
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" %}">
+
+<link rel="stylesheet" type="text/css" href="{% static "css/MDB5-STANDARD-UI-KIT-Free-3.5.0/mdb.min.css" %}">
+
+
+<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text-center">
+
+          <form id="formulario">
+              <img src="img/logo.jpg" alt="logo" id="logo">
+              <h2 class="titulo-registro">Registrarse</h2>
+
+              <!--nombre input-->
+            <div class="form-outline mb-4">
+              <input type="text" id="Nombre" class="form-control" />
+              <label class="form-label" for="Nombre">Nombre</label>
+            </div>
+
+            <!--Apellido input-->
+            <div class="form-outline mb-4">
+              <input type="text" id="Apellido" class="form-control" />
+              <label class="form-label" for="Apellido">Apellido</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="Numerotelefonico" class="form-control" />
+              <label class="form-label" for="numerotelefonico">Numero Telefonico</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="Email" class="form-control" />
+              <label class="form-label" for="email">Email</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="form1Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form1Example3">Recordarme</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">olvidaste tu contraseña?</a>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" id="registrar"class="btn btn-primary btn-block">Registrarse</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+      <!--Caja de Verificacion De datos-->
+
+    <div class="card" style="width: 18rem;">
+      <h5 id="verificacion" ><b>Verifique los Datos antes de enviar!  <img src="img/pizza.svg" class="iconsvg"></b></h5>
+      <div class="card-header">
+        <b>Datos De Usuario.</b>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item liNombre"><strong>Nombre:</strong> </li>
+        <li class="list-group-item liApellido"><strong>Apellido:</strong> </li>
+        <li class="list-group-item liNumero"><strong> Numero Telefonico:</strong> </li>
+        <li class="list-group-item liEmail"><strong>Email:</strong> </li>
+      </ul>
+
+      <button type="submit" id="atras"class="btn btn-primary btn-block atras">Atrás</button>
+      <button type="submit" id="enviar"class="btn btn-primary btn-block enviar">Envíar</button>
+
+    </div>
+
+
+
+     <script type="text/javascript" src="css/MDB5-STANDARD-UI-KIT-Free-3.5.0/js/mdb.min.js"></script>
+
+     <script type="text/javascript" src="{% static "css/MDB5-STANDARD-UI-KIT-Free-3.5.0/js/mdb.min.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/jquery-3.6.0.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/jquery-UI-1.12.1/jquery-ui.min.js" %}"></script>
+
+    <script type="text/javascript" src="{% static "js/main.js" %}"></script>
+
+  </body>
+</html>

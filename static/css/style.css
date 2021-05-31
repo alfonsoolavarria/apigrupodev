@@ -1,0 +1,65 @@
+
+   #logo{
+      width: 90px;
+      border-radius: 555px;
+      margin-bottom: 10px;
+   }
+   .titulo-registro{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: arial,helvetica;
+    font-weight: bold;
+    
+   }
+    #formulario{
+       display: none;
+    }
+
+    .card{
+      float: left;
+      margin-top: -520px;
+      margin-left: 100px;
+      display: none;
+   }
+   .list-group{
+      width: 320px !important;
+   }
+   .atras,
+   .enviar{
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+   }
+   .atras{
+      background: red;
+   }
+   .atras:hover{
+      background: rgb(187, 0, 0);
+   }
+   .enviar{
+      float: left !important;
+      margin-top: -65px !important;
+      margin-left: 150px;
+   }
+   .correcto{
+      font-size: 15px;
+      color: green;
+      text-align: center;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      display: none;
+   }
+
+   #verificacion{
+      font-size: 13px;
+      color: red;
+   }
+   #registrar{
+      background: rgb(143, 13, 13);
+   }
+   .iconsvg{
+      width: 30px;
+      display: none;
+      position: fixed;
+   }
+  
